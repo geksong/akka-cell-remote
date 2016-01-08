@@ -1,0 +1,18 @@
+group 'org.geksong'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'scala'
+
+repositories {
+    maven{ url 'http://maven.oschina.net/content/groups/public/'}
+}
+
+dependencies {
+    compile "org.scala-lang:scala-library:2.11.6"
+    compile "org.scala-lang:scala-compiler:2.11.6"
+    compile "org.scala-lang:scala-reflect:2.11.6"
+    compile "com.typesafe.akka:akka-remote_2.11:2.4.1"
+    testCompile "junit:junit:4.11"
+}
+

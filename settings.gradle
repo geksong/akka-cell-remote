@@ -1,0 +1,5 @@
+rootProject.name = 'akka-cell-remote'
+include 'akka-cell-remote-provider'
+include 'akka-cell-remote-api'
+include 'akka-cell-remote-client'
+
