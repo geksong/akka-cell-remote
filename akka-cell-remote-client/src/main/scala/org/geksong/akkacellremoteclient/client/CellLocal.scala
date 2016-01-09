@@ -10,7 +10,7 @@ import org.geksong.akkacellremoteapi.msg.{CellDoneMessage, CellMessage, CellStar
 object CellLocal {
   def main(args: Array[String]): Unit = {
     System.setProperty("akka.remote.netty.port", "5152")
-    implicit val system = ActorSystem("LocalSystem")
+    val system = ActorSystem("LocalSystem")
     val localActor = system.actorOf(Props[CellLocalActor], name = "CellLocalActor") // the local actor
     localActor ! CellStart
   }
